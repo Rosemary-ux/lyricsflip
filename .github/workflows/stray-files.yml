@@ -10,7 +10,7 @@ jobs:
     name: No .ts/.tsx outside frontend/ backend/ onchain/
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Reject TypeScript files outside workspace folders
         shell: bash
