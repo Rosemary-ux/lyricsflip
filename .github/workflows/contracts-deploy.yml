@@ -35,7 +35,7 @@ jobs:
       # contract's `version()` constant.
       EXPECTED_VERSION: '1'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0
@@ -172,7 +172,7 @@ jobs:
       DEPLOYMENT_FILE: deployments/mainnet.json
       EXPECTED_VERSION: '1'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0

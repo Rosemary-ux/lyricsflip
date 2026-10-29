@@ -13,7 +13,7 @@ jobs:
     name: Merge guards
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Reject conflict markers
         run: |
           if git grep -n -E '^(<<<<<<<|=======|>>>>>>>)' -- .; then
